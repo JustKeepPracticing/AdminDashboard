@@ -1,0 +1,75 @@
+.left-side-menu
+  list-style: none
+  padding: 0
+  margin: 0
+  &:hover
+    a
+      &:nth-of-type(2)
+        opacity: 1
+    .fa-home
+      color: $material-pink
+      &:active
+        color: $white
+    .fa-map-marker-alt
+      color: $material-purple
+      &:active
+        color: $white
+    .fa-envelope
+      color: $material-cyan
+      &:active
+        color: $white
+    .fa-calendar-alt
+      color: $material-green
+      &:active
+        color: $white
+    .fa-file
+      color: $material-orange
+      &:active
+        color: $white
+    .fa-th-large
+      color: $material-teal
+      &:active
+        color: $white
+    .fa-chart-bar
+      color: $material-red
+      &:active
+        color: $white
+  a
+    color: $white
+    display: block
+    &:nth-of-type(1)
+      font-size: $font-large
+    &:nth-of-type(2)
+      opacity: 0
+      font-size: $font-small-xs
+      transition: .2s linear
+      &:hover
+        text-decoration: none
+  li
+    padding: .625rem
+    &:last-of-type
+      margin-bottom: 0
+
+.side-social-menu
+  list-style: none
+  padding: 32px 0 0 21px
+  li
+    a
+      font-size: $font-large
+    &:nth-of-type(1)
+      a
+        color: $behance-brand-color
+    &:nth-of-type(2)
+      a
+        color: $pinterest-brand-color
+    &:nth-of-type(3)
+      a
+        color: $drible-brand-color
+    &:nth-of-type(4)
+      a
+        color: $fb-brand-color
+    &:nth-of-type(5)
+      a
+        color: $linkedin-brand-color
+
+

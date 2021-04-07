@@ -1,0 +1,48 @@
+.notification-bell, .user-dropdown
+  @media #{$grid-breakpoint-m}
+    display: none
+  .dropdown-item
+    color: $brand-color
+    font-family: $roboto-reg
+
+.user-dropdown
+  .nav-link
+    color: $brand-color
+  .user-pic
+    background-image: url('../img/user.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    height: 40px
+    width: 40px
+    margin-right: 13px
+
+.status-dropdown
+  a
+    span
+      height: 4px
+      width: 4px
+      display: block
+      margin: 2px
+      background-color: $material-lightgrey
+      +border-radius(50%)
+
+.status-dropdown-menu
+  .dropdown-item
+    &:hover
+      color: $white
+    &:nth-of-type(1)
+      &:hover
+        background-color: $material-green
+    &:nth-of-type(2)
+      &:hover
+        background-color: $material-orange
+    &:nth-of-type(3)
+      &:hover
+        background-color: $material-red
+    &:nth-of-type(4)
+      &:hover
+        background-color: $material-cyan
+    &:nth-of-type(5)
+      &:hover
+        background-color: $material-purple
+

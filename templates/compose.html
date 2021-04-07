@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/logo-short.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Compose</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="home.html"></a>
+            </div>
+            <div class="user-img rounded-circle"></div>
+            <ul class="text-center left-side-menu">
+                <li>
+                    <a href="home.html"><i class="fas fa-home"></i></a>
+                    <a href="" class="text-uppercase">dashboard</a>
+                </li>
+                <li>
+                    <a href="maps.html"><i class="fas fa-map-marker-alt"></i></a>
+                    <a href="" class="text-uppercase">maps</a>
+                </li>
+                <li class="active">
+                    <a data-toggle="collapse" href="#multiCollapsemail" role="button" aria-expanded="false"
+                       aria-controls="multiCollapsemail"><i class="fas fa-envelope"></i></a>
+                    <a href="" class="text-uppercase">mailbox</a>
+                </li>
+                <div class="collapse multi-collapse pages-collapse text-capitalize show" id="multiCollapsemail">
+                    <div class="collapse-items">
+                        <a href="mailbox.html">Inbox</a>
+                        <a href="compose.html">Compose</a>
+                        <a href="view-mail.html">View mail</a>
+                    </div>
+                </div>
+                <li>
+                    <a href="calendar.html"><i class="far fa-calendar-alt"></i></a>
+                    <a href="" class="text-uppercase">calendar</a>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#multiCollapsepages" role="button" aria-expanded="false"
+                       aria-controls="multiCollapsepages"><i class="fas fa-file"></i></a>
+                    <a href="" class="text-uppercase">pages</a>
+                    <div class="collapse multi-collapse pages-collapse text-capitalize" id="multiCollapsepages">
+                        <div class="collapse-items">
+                            <a href="lock.html">Lock screen</a>
+                            <a href="login.html">Log in</a>
+                            <a href="register.html">Register</a>
+                            <a href="pricing-tables.html">Pricing tables</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="components.html"><i class="fas fa-th-large"></i></a>
+                    <a href="" class="text-uppercase">components</a>
+                </li>
+                <li>
+                    <a href="charts.html"><i class="fas fa-chart-bar"></i></a>
+                    <a href="" class="text-uppercase">charts</a>
+                </li>
+            </ul>
+
+        </div><!-- sidebar-wrapper ends -->
+    </div><!-- sidebar ends-->
+
+    <!--  here begins  mobile sidebar -->
+
+    <div id="mobile-sidebar">
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="home.html"></a>
+            </div>
+            <div class="user-img rounded-circle"></div>
+            <div class="user-collapse text-capitalize">
+                <a class="" data-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false"
+                   aria-controls="multiCollapseExample1">Maya Natali</a>
+                <div class="collapse multi-collapse" id="multiCollapse1">
+                    <div class="collapse-items">
+                        <a href="#">profile</a>
+                        <a href="#">settings</a>
+                        <a href="#">logout</a>
+                    </div>
+                </div>
+            </div><!-- mobile user-collapse ends-->
+            <div class="notification-collapse">
+                <a class="" data-toggle="collapse" href="#multiCollapse2" role="button" aria-expanded="false"
+                   aria-controls="multiCollapseExample1"><i class="fas fa-bell"></i>Notification</a>
+                <div class="collapse multi-collapse" id="multiCollapse2">
+                    <div class="collapse-items">
+                        <a href="#">action</a>
+                        <a href="#">another action</a>
+                        <a href="#">something else here</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="text-center left-side-menu">
+                <li>
+                    <a href="home.html"><i class="fas fa-home"></i></a>
+                    <a href="" class="text-uppercase">dashboard</a>
+                </li>
+                <li>
+                    <a href="maps.html"><i class="fas fa-map-marker-alt"></i></a>
+                    <a href="" class="text-uppercase">maps</a>
+                </li>
+                <li class="active">
+                    <a data-toggle="collapse" href="#multiCollapsemail" role="button" aria-expanded="false"
+                       aria-controls="multiCollapsemail"><i class="fas fa-envelope"></i></a>
+                    <a href="" class="text-uppercase">mailbox</a>
+                    <div class="collapse multi-collapse pages-collapse text-capitalize" id="multiCollapsemail">
+                        <div class="collapse-items">
+                            <a href="mailbox.html">Inbox</a>
+                            <a href="">Compose</a>
+                            <a href="">View mail</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="calendar.html"><i class="far fa-calendar-alt"></i></a>
+                    <a href="" class="text-uppercase">calendar</a>
+                </li>
+                <li>
+                    <a href="pages.html"><i class="fas fa-file"></i></a>
+                    <a href="" class="text-uppercase">pages</a>
+                </li>
+                <li>
+                    <a href="components.html"><i class="fas fa-th-large"></i></a>
+                    <a href="" class="text-uppercase">components</a>
+                </li>
+                <li>
+                    <a href="charts.html"><i class="fas fa-chart-bar"></i></a>
+                    <a href="" class="text-uppercase">charts</a>
+                </li>
+            </ul>
+        </div><!-- mobile-sidebar sidebar-wrapper ends -->
+    </div><!-- mobile-sidebar ends-->
+
+    <!-- -----  content goes here  ------   -->
+
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <header>
+                <nav class="navbar-brand">
+                    <a href="#dashboard" class="text-capitalize"><h5>mailbox</h5></a>
+                </nav>
+                <div class="mobile-toggler float-right d-md-block d-lg-none d-sm-block">
+                    <a href="#mobile-sidebar" class="btn mobile-sidebar-btn" data-toggle="sidebar" aria-expanded="false">
+                        <span class="togglers"></span>
+                    </a>
+                </div>
+                <div class="user-dropdown float-right">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="user-pic d-block rounded-circle float-left"></a>
+                            <a class="nav-link dropdown-toggle text-capitalize float-left" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                maya natali
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item text-capitalize" href="#">profile</a>
+                                <a class="dropdown-item text-capitalize" href="#">settings</a>
+                                <a class="dropdown-item text-capitalize" href="#">logout</a>
+                            </div>
+                    </ul>
+                </div><!-- user-dropdown ends-->
+                <ul class="navbar-nav notification-bell float-right">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-number d-block rounded-circle text-center">3</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul><!-- navbar-nav notification-bell ends -->
+                <div class="search-part">
+                    <input type="text" name="search" placeholder="Search">
+                </div>
+
+            </header>
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                        <a href="mailbox.html" class="text-capitalize compose-btn rounded">
+                            Back to Inbox
+                        </a>
+                        <div class="box-wrapper rounded">
+                            <div class="folders">
+                                <ul class="folders-body text-capitalize nav flex-column">
+                                    <li class="nav-item"><a href="" class="nav-link">
+                                        <i class="fas fa-envelope mr-3"></i>
+                                        inbox</a></li>
+                                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-star mr-3"></i>
+                                        starred</a></li>
+                                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-paper-plane mr-3"></i>
+                                        sent</a></li>
+                                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-file-alt mr-3"></i>
+                                        draft</a></li>
+                                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-trash-alt mr-3"></i>
+                                        trash</a></li>
+                                </ul>
+                            </div>
+                            <!-- --- folders ends  --- ---->
+                            <div class="labels">
+                                <div class="label-header position-relative">
+                                    <h5 class="text-capitalize">labels</h5>
+                                    <i class="fas fa-plus-circle"></i>
+                                </div>
+                                <ul class="text-capitalize list-unstyled labels-sample">
+                                    <li><span class="purple-cube"></span>important</li>
+                                    <li><span class="orange-cube"></span>social</li>
+                                    <li><span class="green-cube"></span>promotions</li>
+                                </ul>
+                            </div> <!-- --- labels ends  --- ---->
+                        </div> <!-- ---- box-wrapper ends---- -->
+                    </div>   <!--- ---- col ends  ---- -->
+                    <div class="col-lg-10 col-md-12 col-sm-12">
+                        <div class="mail-content compose-mail-content rounded">
+                            <h5 class="text-capitalize">compose new message</h5>
+                            <div class="form_email-send">
+                                <div class="input-group-to">
+                                    <input type="text" placeholder="to" class="text-capitalize">
+                                    <label class="text-capitalize">
+                                        <i class="fas fa-user"></i>
+                                    </label>
+                                </div><!-- input-group-to ends -->
+                                <div class="input-group-subject">
+                                    <input type="text" placeholder="subject" class="text-capitalize">
+                                    <label>
+                                        <i class="fas fa-file-alt"></i>
+                                    </label>
+                                </div><!-- input-group-subject ends -->
+                                <textarea name="content" id="editor">&lt;p&gt;Continuous effort - not strength or intelligence - is the key to unlocking our potential.
+.&lt;/p&gt;</textarea>
+
+
+
+                            </div> <!-- form-email-send ends here-->
+                        </div> <!-- ---- mail-content ends ---- -->
+                    </div>  <!---- ---- col ends ----- ---->
+
+
+
+
+                </div><!-- row ends -->
+            </div><!-- main-content ends -->
+        </div><!-- container-fluid ends-->
+        <footer>
+            <p>Made with <i class="fas fa-heart"></i> by Espace 2018</p>
+        </footer>
+    </div><!-- content-wrapper ends-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/chartist.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/advanced.js"></script>
+    <script src="js/ckeditor.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

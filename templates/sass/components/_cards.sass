@@ -1,0 +1,74 @@
+// main-content cards
+
+.main-content
+  .cards-body
+    padding-top: 35px
+    font-size: $font-fa-icon
+    .fa-book
+      color: $material-pink
+    .fa-users
+      color: $material-green
+    .fa-university
+      color: $material-orange
+    .fa-twitter
+      color: $material-cyan
+    span
+      font-family: $brandon-reg
+      border-bottom: 1px solid rgba(0, 0, 0, .2)
+  .cards-footer
+    font-size: $font-regular
+    font-family: $brandon-reg
+    margin-top: 24px
+    color: rgba($brand-color, .6)
+  p
+    &:first-letter
+      text-transform: uppercase
+
+  .cards
+    margin-bottom: ($spacer * 5.1)
+
+.booking-inner-wrapper, .sells-inner-wrapper,
+.revenue-inner-wrapper, .twitter-inner-wrapper
+  position: relative
+  width: 220px
+  height: 150px
+  background-color: $white
+  @extend %box-shadow-reg
+
+.card-gradient-box
+  position: absolute
+  width: 220px
+  height: 165px
+  right: 87px
+  top: 20px
+  display: flex
+  justify-content: flex-end
+  @extend %box-shadow-extra
+  p
+    align-self: flex-end
+    margin-right: 25px
+    margin-bottom: 5px
+    color: $white
+    font-size: $font-regular-m
+    +letter-space(2px)
+
+.booking-card
+  .card-gradient-box
+    @extend %gradient-pink
+
+.sells-card
+  .card-gradient-box
+    @extend %gradient-green
+
+.revenue-card
+  .card-gradient-box
+    @extend %gradient-orange
+
+.twitter-card
+  .card-gradient-box
+    @extend %gradient-cyan
+
+
+@media #{$grid-breakpoint-m}
+  .md-mb-1
+    margin-bottom: 1rem

@@ -1,0 +1,41 @@
+.red-bar-chart,
+.red-line-chart
+  background-color: $white
+  @extend %box-shadow-reg
+  padding: 23px 33px 17px 33px
+
+.red-bar-chart
+  .ct-perfect-fourth
+    &:before
+      padding-bottom: 62%
+
+.chart-info
+  color: $brand-color
+  .fa-long-arrow-alt-up
+    color: $material-lightgreen
+    font-size: $font-small-m
+    margin-right: 7px
+  span:nth-of-type(1), span:nth-of-type(2)
+    font-size: $font-small-m
+    font-family: $roboto-light
+  .chart-footer
+    border-top: 1px solid rgba(0,0,0,0.2)
+    margin: 10px 34px 0 0
+    span
+      margin-top: 17px
+
+#homeLineChart
+  .ct-series-a .ct-point
+    stroke: #c62828
+  .ct-series-a .ct-area
+    fill: $material-red
+    fill-opacity: .7
+
+//@media #{$grid-breakpoint-m}
+//  .top-locations-wrapper
+//    #chartjs-4
+//      height: 250px
+//      width: 250px
+//      float: left
+//      margin-right: 20px
+

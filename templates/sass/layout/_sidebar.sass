@@ -1,0 +1,100 @@
+.sidebar
+  position: fixed
+  width: 8.125rem
+  left: 0
+  top: 0
+  bottom: 0
+  .logo
+    a
+      &:before
+        width: 100%
+        height: 1px
+        position: absolute
+        content: ""
+        top: 77px
+        background-color: $material-grey
+
+  .user-img
+    background-image: url('../img/user.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    margin: 0 auto 123px
+    height: 70px
+    width: 70px
+
+.sidebar-wrapper
+  background-image: url("../img/sidebar-bg.png")
+  background-size: cover
+  padding-top: 2.0625rem
+  position: relative
+  height: 100vh
+  overflow: auto
+  .logo 
+    background-image: url("../img/espace-2.png")
+    height: 38px
+    background-repeat: no-repeat
+    background-position: center
+    margin-bottom: 2.1875rem
+
+//#mobile-sidebar
+//  display: none
+//  +transition(all .2s linear)
+//
+
+#mobile-sidebar
+  width: 250px
+  position: fixed
+  z-index: 9
+  right: 0
+  transform: translateX(250px)
+  .sidebar-wrapper
+    overflow: auto
+    padding-bottom: 180px
+
+#mobile-sidebar.toggled-sidebar
+  +transition(all .2s linear)
+  +transform(translateX(0))
+  right: 0
+
+
+/// mobile sidebar
+@media only screen and (max-width: 768px)
+  .sidebar
+    display: none
+  .user-img
+    background-image: url('../img/user.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    margin: 0 auto 20px
+    height: 70px
+    width: 70px
+  //.content-wrapper
+  //  padding: 0
+  //#mobile-sidebar
+  //  display: block
+  //  right: -130px
+  //  position: fixed
+  //  width: 0
+  //  top: 0
+  //  bottom: 0
+  //  z-index: 9999
+
+.left-side-menu
+  .active
+    background-color: $material-pink
+    display: block
+    a
+      &:nth-of-type(2)
+        opacity: 1
+    &:hover
+      color: $white
+  &:hover
+    .active
+      i
+        color: $white
+
+
+
+
+
+

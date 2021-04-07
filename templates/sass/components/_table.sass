@@ -1,0 +1,30 @@
+#projects-pro-table
+  margin-top: 34px
+  .with-border
+    border-bottom: 1px solid rgba(0,0,0,0.2)
+  tr
+    th, td
+      border: none
+  @at-root
+    .pro-name
+      font-weight: normal
+    .priority-item
+      font-family: $roboto-light
+
+.mailbox-messages
+  tbody
+    tr
+      &:nth-of-type(odd)
+        background-color: #f3f3f3
+      &:nth-of-type(even)
+        background-color: #faf9f9
+      &:hover
+        background-color: rgba(0,0,0,0.075)
+    th
+      padding-left: 30px
+  .important-label
+    background-color: #9c27b0
+    width: 42px
+    height: 9px
+    display: inline-flex
+    margin-right: 24px

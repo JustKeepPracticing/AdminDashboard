@@ -1,0 +1,248 @@
+.red-bar-chart,
+.red-line-chart,
+.project-progress-wrapper,
+.to-do-box-wrapper,
+.top-locations-wrapper,
+.testimonial-slider-wrapper,
+.social-activity-wrapper,
+.direct-email-wrapper,
+.user-profile-wrapper
+  @extend %fullHeight
+
+.content-wrapper
+  padding: 0 16px 0 146px
+  background-color: $brand-bg-color
+  +transition(all .2s linear)
+  @media #{$grid-breakpoint-m}
+    padding: 0
+
+.content-wrapper.toggled-content
+  background-color: #bebebe
+.main-content
+  padding-top: 6.125rem
+
+// project progress box
+
+.project-progress-wrapper
+  @extend .red-bar-chart
+  color: $brand-color
+  font-size: $font-regular
+  h5
+    font-family: $roboto-reg
+    span
+      color: $material-green
+
+// to-do list
+
+.to-do-box-wrapper
+  @extend .project-progress-wrapper
+  padding: 23px 0 17px 0
+  //height: 405px
+  h5
+    padding-left: 33px
+  .input-group
+    margin-top: 38px
+    padding-left: 33px
+    input
+      border: none
+      font-family: $roboto-light-i
+      width: 15.8rem
+      font-size: $font-small-m
+      border-bottom: 1px solid rgba(0,0,0,0.4)
+      outline: none
+      &:focus
+        outline: none
+      &:active
+        outline: none
+
+  .checklist
+    list-style: none
+    padding: 0
+    margin-top: 32px
+    label
+      margin-bottom: 5px
+      &:first-letter
+        text-transform: uppercase
+    li
+      &:hover
+        background-color: #f4f2f2
+        .show-on-hover
+          display: block
+
+.show-on-hover
+  display: none
+  font-size: .8125rem
+  cursor: pointer
+  line-height: 30px
+  span
+    &:first-child
+      margin-right: 10px
+
+// blog posts
+
+.blog-posts-wrapper
+  background-color: $white
+  @extend %box-shadow-reg
+  padding: 23px 33px 17px 33px
+  .card
+    border: none
+  .card-body
+    padding: 13px 0 31px 0
+    h6
+      font-size: $font-small-m
+      font-family: $roboto-bold
+      color: $material-cyan
+    h6 + p
+      margin-bottom: .5rem
+      font-size: $font-small-m
+      font-family: $roboto-light
+      color: rgba(0, 0, 0, .5)
+  .card-title
+    margin-bottom: .625rem
+  .card-link
+    font-size: $font-small-m
+    font-family: $roboto-light
+    color: $brand-color
+  .img-box
+    width: 170px
+    height: 170px
+    overflow: hidden
+    img
+      +transition(all .2s linear)
+    &:hover
+      img
+        +transform(scale(1.2))
+        //+transition(all .2s linear)
+
+
+// user profile
+
+.user-profile-wrapper
+  @extend %box-shadow-reg
+  .profile-top-img-box
+    background: url(../img/user-profile-top-img.png) no-repeat
+    background-size: cover
+    height: 149px
+    background-position: center
+    border-top-left-radius: .25rem
+    border-top-right-radius: .25rem
+  .user-profile-pic
+    overflow: hidden
+  .card-body
+    margin-top: -50px
+    color: $brand-color
+    h6
+      font-family: $roboto-bold
+      margin: 9px 0 0 0
+    span
+      font-family: $roboto-light
+    h6, span, .card-text
+      font-size: $font-small-m
+    .card-text
+      margin: 14px 0 34px 0
+  .card
+    padding-bottom: 20px
+
+
+//  direct email wrapper
+
+.direct-email-wrapper
+  @extend .red-bar-chart
+  h5
+    margin-bottom: 25px
+    font-family: $roboto-reg
+    color: $brand-color
+  .input-group-to,
+  .input-group-subject
+    position: relative
+    margin-bottom: 17px
+    color: rgba(60, 72, 88, .7)
+    font-size: $font-small-m
+    font-family: $roboto-reg
+    input
+      position: relative
+      width: 100%
+      padding-left: 45px
+      +line-height(37px)
+      border: 1px solid rgba(238, 236, 236, 1)
+      color: $brand-color
+      @media #{$grid-breakpoint-s}
+        width: 100%
+      &:focus
+        border-color: $material-cyan
+        @extend %box-shadow-reg
+        outline: none
+    label
+      position: absolute
+      left: 21px
+      top: 0
+      pointer-events: none
+      +line-height(37px)
+      i
+        margin-right: 13px
+  .message-box
+    margin-bottom: 27px
+    color: rgba(60, 72, 88, .7)
+    font-size: $font-small-m
+    font-family: $roboto-reg
+    textarea
+      width: 100%
+      color: $brand-color
+      height: 127px
+      padding: 14px 21px
+      border: 1px solid rgba(238, 236, 236, 1)
+      &:focus
+        border-color: $material-cyan
+        @extend %box-shadow-reg
+        outline: none
+      @media #{$grid-breakpoint-s}
+        width: 100%
+
+
+// top locations
+
+.top-locations-wrapper
+  @extend .red-bar-chart
+  color: $brand-color
+  .chartjs-render-monitor
+    margin-bottom: 50px
+
+.progress-cyan
+  background-color: $material-cyan
+
+.progress-green
+  background-color: $material-green
+
+.progress-pink
+  background-color: $material-pink
+
+
+
+// social-activity
+
+.social-activity-wrapper
+  background: $white
+  padding: 10px
+  @extend %box-shadow-reg
+
+.social-activity-info
+  color: $brand-color
+  font-family: $roboto-reg
+  font-size: $font-regular-l
+  margin-left: 13px
+  ul
+    list-style: none
+    padding: 0
+    margin-top: 20px
+    .fa-dribbble-square
+      color: $material-orange
+    .fa-behance-square
+      color: $material-cyan
+    .fa-pinterest-square
+      color: $material-amber
+    li
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+
+

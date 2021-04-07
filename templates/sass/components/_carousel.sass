@@ -1,0 +1,80 @@
+.testimonial-slider-wrapper
+  @extend .red-bar-chart
+  .carousel-item
+    p
+      font-size: $font-small-m
+      color: $brand-color
+      margin-bottom: 35px
+  .fa-quote-right,
+  .fa-quote-left
+    opacity: .8
+  .fa-quote-right
+    margin-left: 7px
+  .fa-quote-left
+    margin-right: 7px
+
+  .carousel-indicators
+    display: flex
+    align-items: center
+    bottom: -70px
+    li
+      background-color: $brand-color
+      width: 4px
+      height: 4px
+      +border-radius(50%)
+    .active
+      width: 6px
+      height: 6px
+      background-color: $material-cyan
+.author-box
+  float: right
+  span
+    font-size: $font-small-m
+    &:first-child
+      font-family: $roboto-bold
+    &:last-child
+      font-size: $font-small-s
+      font-family: $roboto-light
+
+
+.author-pic-box
+  margin-top: -7px
+  float: right
+  margin-left: 12px
+
+.author-info-box
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+
+.author-img
+  background: url(../img/author-img.png) no-repeat
+  width: 50px
+  height: 50px
+  background-position: center -6px
+
+.in-icon
+  position: relative
+  font-size: $font-regular-l
+  i
+    color: $linkedin-brand-color
+  &:before
+    content: ''
+    width: 8px
+    height: 8px
+    display: block
+    top: -2px
+    left: 20px
+    position: absolute
+    +border-radius(50%)
+    background-color: $linkedin-brand-color
+  &:after
+    content: ''
+    width: 5px
+    height: 5px
+    display: block
+    top: -9px
+    left: 30px
+    position: absolute
+    +border-radius(50%)
+    background-color: $linkedin-brand-color

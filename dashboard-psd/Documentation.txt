@@ -1,0 +1,5 @@
+text_brand_color - #3c4858
+font-family - Roboto mainly + some use of Brandon grotesque
+material red - #F44336
+
+sidebar hover font-size: .66rem font-weight: 500

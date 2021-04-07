@@ -1,0 +1,58 @@
+=flexbox
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+=lighten($color, $amount)
+  background-color: lighten($color, 5%)
+
+=transition($transition)
+  -webkit-transition: $transition
+  -moz-transition: $transition
+  -o-transition: $transition
+  -ms-transition: $transition
+  transition: $transition
+
+=letter-space($spacing)
+  letter-spacing: $spacing
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+=line-height ($height)
+  line-height: $height
+
+=box-shadow($shadow)
+  -webkit-box-shadow: $shadow
+  -moz-box-shadow: $shadow
+  box-shadow: $shadow
+
+=transform-origin($origin)
+  moz-transform-origin: $origin
+  -o-transform-origin: $origin
+  -ms-transform-origin: $origin
+  -webkit-transform-origin: $origin
+  transform-origin: $origin
+
+=transform($transforms)
+  -moz-transform: $transforms
+  -o-transform: $transforms
+  -ms-transform: $transforms
+  -webkit-transform: $transforms
+  transform: $transforms
+
+=forIE( $ieVersion )
+  .ie#{$ieVersion} &
+    @content
+
+=gradient-bg($direction, $color1, $color2)
+  background: linear-gradient($direction, $color1, $color2)
+  background: -moz-linear-gradient($direction, $color1, $color2)
+  background: -webkit-gradient($direction, $color1, $color2)
+  background: -webkit-linear-gradient($direction, $color1, $color2)
+  background: -o-linear-gradient($direction, $color1, $color2)
+

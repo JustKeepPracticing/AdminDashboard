@@ -1,0 +1,159 @@
+.project-progress-wrapper
+  .this-week-btn
+    @extend %gradient-amber
+    border: none
+    font-size: $font-small-m
+    @extend %box-shadow-reg
+    &:focus
+      @extend %box-shadow-reg
+    &:hover
+      @extend %box-shadow-extra
+  .btn-primary:not(:disabled):active
+    @extend %box-shadow-reg
+    @extend %gradient-amber
+    border: none
+
+  @at-root
+    .status-item
+      display: block
+      +line-height(22px)
+      text-align: center
+      font-size: $font-small-m
+      +border-radius(3px)
+      color: $white
+      @extend %box-shadow-reg
+      &:hover
+        color: $white
+        text-decoration: none
+        @extend %box-shadow-extra
+    .status-cyan
+      background-color: $material-cyan
+    .status-red
+      background-color: $material-red
+    .status-purple
+      background-color: $material-purple
+    .status-green
+      background-color: $material-green
+    .status-orange
+      background-color: $material-orange
+
+.to-do-box-wrapper
+  .input-group
+    button
+      @extend .this-week-btn
+      width: 72px
+      font-family: $roboto-reg
+      font-size: $font-small-m
+      margin-left: 5px
+
+.mobile-sidebar-btn
+  background-color: transparent
+  +transform(matrix(1, -0.3, -0.36397, 1.3, 0, 0))
+  &:focus
+    box-shadow: none
+  span
+    display: block
+    width: 28px
+    height: 2px
+    background-color: $brand-color
+  &:after
+    content: ''
+    display: block
+    width: 28px
+    height: 2px
+    background-color: $brand-color
+    margin-top: 2px
+  &:before
+    content: ''
+    display: block
+    width: 28px
+    height: 2px
+    background-color: $brand-color
+    margin-bottom: 2px
+
+.user-profile-wrapper
+  .card-text
+    + a
+      @extend %gradient-pink
+      @extend %box-shadow-reg
+      +border-radius(3px)
+      color: $white
+      padding: 5px 11px
+      font:
+        size: $font-small-m
+        family: $roboto-reg
+      &:hover
+        text-decoration: none
+        @extend %box-shadow-extra
+
+.direct-email-wrapper
+  .message-box
+    + button
+      @extend %gradient-pink
+      @extend %box-shadow-reg
+      +border-radius(3px)
+      +line-height(27px)
+      float: right
+      font:
+        size: $font-small-m
+        family: $roboto-reg
+      padding: 2px 25px
+      color: $white
+      border: none
+      outline: none
+      &:hover
+        @extend %box-shadow-extra
+        outline: none
+.register-btn
+  +gradient-bg(0, #26C6DA, #00ACC1)
+  @extend %box-shadow-reg
+  +border-radius(3px)
+  color: $white
+  border: none
+  outline: none
+  width: 100%
+  line-height: 40px
+  margin-top: 39px
+  &:hover
+    @extend %box-shadow-extra
+  @media #{$grid-breakpoint-xs}
+    margin-top: 30px
+
+.login-btn
+  @extend .register-btn
+
+.mail-content
+  button
+    +border-radius(0)
+    font-family: $roboto-reg
+    color: $brand-color
+    &:hover
+      @extend %box-shadow-reg
+    &:focus
+      +box-shadow(none)
+
+.mail-controls-group
+  button
+    font-size: $font-small-s
+  .all-mail-btn
+    position: relative
+    padding-left: 20px
+
+.pagination-controls
+  padding-right: 81px
+
+.compose-btn
+  background-color: $material-red
+  display: block
+  height: 37px
+  text-align: center
+  +line-height(37px)
+  color: $white
+  font-family: $roboto-medium
+  font-size: $font-regular
+  @extend %box-shadow-reg
+  &:hover
+    text-decoration: none
+    color: $white
+    @extend %box-shadow-extra
+

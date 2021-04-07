@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/logo-short.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>home</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="home.html"></a>
+            </div>
+            <div class="user-img rounded-circle"></div>
+            <ul class="text-center left-side-menu">
+                <li class="active">
+                    <a href="home.html"><i class="fas fa-home"></i></a>
+                    <a href="" class="text-uppercase">dashboard</a>
+                </li>
+                <li>
+                    <a href="maps.html"><i class="fas fa-map-marker-alt"></i></a>
+                    <a href="" class="text-uppercase">maps</a>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#multiCollapsmailbox" role="button" aria-expanded="false"
+                       aria-controls="multiCollapsmailbox"><i class="fas fa-envelope"></i></a>
+                    <a href="" class="text-uppercase">mailbox</a>
+                    <div class="collapse multi-collapse pages-collapse text-capitalize" id="multiCollapsmailbox">
+                        <div class="collapse-items">
+                            <a href="mailbox.html">Inbox</a>
+                            <a href="compose.html">Compose</a>
+                            <a href="view-mail.html">View mail</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="calendar.html"><i class="far fa-calendar-alt"></i></a>
+                    <a href="" class="text-uppercase">calendar</a>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#multiCollapsepages" role="button" aria-expanded="false"
+                       aria-controls="multiCollapsepages"><i class="fas fa-file"></i></a>
+                    <a href="" class="text-uppercase">pages</a>
+                    <div class="collapse multi-collapse pages-collapse text-capitalize" id="multiCollapsepages">
+                        <div class="collapse-items">
+                            <a href="lock.html">Lock screen</a>
+                            <a href="login.html">Log in</a>
+                            <a href="register.html">Register</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><i class="fas fa-th-large"></i></a>
+                    <a href="" class="text-uppercase">components</a>
+                </li>
+                <li>
+                    <a href="charts.html"><i class="fas fa-chart-bar"></i></a>
+                    <a href="" class="text-uppercase">charts</a>
+                </li>
+            </ul>
+
+        </div><!-- sidebar-wrapper ends -->
+    </div><!-- sidebar ends-->
+       <!--   content goes here     -->
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <header>
+                <nav class="navbar-brand">
+                    <a href="#dashboard" class="text-capitalize"><h5>dashboard</h5></a>
+                </nav>
+                <div class="mobile-toggler float-right d-md-block d-lg-none d-sm-block">
+                    <a href="#mobile-sidebar" class="btn mobile-sidebar-btn" data-toggle="sidebar" aria-expanded="false">
+                        <span class="togglers"></span>
+                    </a>
+                </div>
+                <div class="user-dropdown float-right">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="user-pic d-block rounded-circle float-left"></a>
+                            <a class="nav-link dropdown-toggle text-capitalize float-left" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                maya natali
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item text-capitalize" href="#">profile</a>
+                                <a class="dropdown-item text-capitalize" href="#">settings</a>
+                                <a class="dropdown-item text-capitalize" href="#">logout</a>
+                            </div>
+                    </ul>
+                </div><!-- user-dropdown ends-->
+                <ul class="navbar-nav notification-bell float-right">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-number d-block rounded-circle text-center">3</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul><!-- navbar-nav notification-bell ends -->
+                <div class="search-part">
+                    <input type="text" name="search" placeholder="Search">
+                </div>
+
+            </header>
+            <div class="main-content">
+                <!--  here begins  mobile sidebar -->
+                <div id="mobile-sidebar">
+                    <div class="sidebar-wrapper">
+                        <div class="logo">
+                            <a href="home.html"></a>
+                        </div>
+                        <div class="user-img rounded-circle"></div>
+                        <div class="user-collapse text-capitalize">
+                            <a class="" data-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false"
+                               aria-controls="multiCollapseExample1">Maya Natali</a>
+                            <div class="collapse multi-collapse" id="multiCollapse1">
+                                <div class="collapse-items">
+                                    <a href="#">profile</a>
+                                    <a href="#">settings</a>
+                                    <a href="#">logout</a>
+                                </div>
+                            </div>
+                        </div><!-- mobile user-collapse ends-->
+                        <div class="notification-collapse">
+                            <a class="" data-toggle="collapse" href="#multiCollapse2" role="button" aria-expanded="false"
+                               aria-controls="multiCollapseExample1"><i class="fas fa-bell"></i>Notification</a>
+                            <div class="collapse multi-collapse" id="multiCollapse2">
+                                <div class="collapse-items">
+                                    <a href="#">action</a>
+                                    <a href="#">another action</a>
+                                    <a href="#">something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="text-center left-side-menu">
+                            <li>
+                                <a href="dashboard.html"><i class="fas fa-home"></i></a>
+                                <a href="" class="text-uppercase">dashboard</a>
+                            </li>
+                            <li>
+                                <a href="maps.html"><i class="fas fa-map-marker-alt"></i></a>
+                                <a href="" class="text-uppercase">maps</a>
+                            </li>
+                            <li>
+                                <a data-toggle="collapse" href="#multiCollapsemail" role="button" aria-expanded="false"
+                                   aria-controls="multiCollapsemail"><i class="fas fa-envelope"></i></a>
+                                <a href="" class="text-uppercase">mailbox</a>
+                                <div class="collapse multi-collapse pages-collapse text-capitalize" id="multiCollapsemail">
+                                    <div class="collapse-items">
+                                        <a href="mailbox.html">Inbox</a>
+                                        <a href="compose.html">Compose</a>
+                                        <a href="view-mail.html">View mail</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="calendar.html"><i class="far fa-calendar-alt"></i></a>
+                                <a href="" class="text-uppercase">calendar</a>
+                            </li>
+                            <li>
+                                <a data-toggle="collapse" href="#multiCollapse_pages" role="button" aria-expanded="false"
+                                   aria-controls="multiCollapse_pages"><i class="fas fa-file"></i></a>
+                                <a href="" class="text-uppercase">pages</a>
+                                <div class="collapse multi-collapse pages-collapse text-capitalize" id="multiCollapse_pages">
+                                    <div class="collapse-items">
+                                        <a href="lock.html">Lock screen</a>
+                                        <a href="login.html">Log in</a>
+                                        <a href="register.html">Register</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="components.html"><i class="fas fa-th-large"></i></a>
+                                <a href="" class="text-uppercase">components</a>
+                            </li>
+                            <li>
+                                <a href="charts.html"><i class="fas fa-chart-bar"></i></a>
+                                <a href="" class="text-uppercase">charts</a>
+                            </li>
+                        </ul>
+                    </div><!-- mobile-sidebar sidebar-wrapper ends -->
+                </div><!-- mobile-sidebar ends-->
+                <div class="row cards">
+                    <div class="booking-card md-mb-1 col-lg-3 col-md-6 col-sm-6">
+                        <div class="card-gradient-box">
+                            <p class="text-capitalize text-right">bookings</p>
+                        </div>
+                        <div class="booking-inner-wrapper mx-auto text-center">
+                            <div class="cards-body">
+                                <i class="fas fa-book"></i>
+                                <span>184</span>
+                            </div>
+                            <div class="cards-footer">
+                                <p>last month: 97</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sells-card col-lg-3 col-md-6 col-sm-6">
+                        <div class="card-gradient-box">
+                            <p class="text-capitalize text-right">sells</p>
+                        </div>
+                        <div class="sells-inner-wrapper mx-auto text-center">
+                            <div class="cards-body">
+                                <i class="fas fa-users"></i>
+                                <span>6897</span>
+                            </div>
+                            <div class="cards-footer">
+                                <p>last month: 9357</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="revenue-card col-lg-3 col-md-6 col-sm-6">
+                        <div class="card-gradient-box">
+                            <p class="text-capitalize text-right">revenue</p>
+                        </div>
+                        <div class="revenue-inner-wrapper mx-auto text-center">
+                            <div class="cards-body">
+                                <i class="fas fa-university"></i>
+                                <span>$15.732</span>
+                            </div>
+                            <div class="cards-footer">
+                                <p>last month: $13.761</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="twitter-card col-lg-3 col-md-6 col-sm-6">
+                        <div class="card-gradient-box">
+                            <p class="text-capitalize text-right">followers</p>
+                        </div>
+                        <div class="twitter-inner-wrapper mx-auto text-center">
+                            <div class="cards-body">
+                                <i class="fab fa-twitter"></i>
+                                <span>258</span>
+                            </div>
+                            <div class="cards-footer">
+                                <p>last month: 134</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- cards end -->
+                <div class="row charts-row">
+                    <div class="col-lg-6 col-md-12 mb-5">
+                        <div class="red-bar-chart rounded">
+                            <div class="ct-chart ct-perfect-fourth" id="barChart"></div>
+                            <div class="chart-info">
+                                <h5>Daily sales</h5>
+                                <span><i class="fas fa-long-arrow-alt-up"></i>Sales increased up to 30%</span>
+                                <div class="chart-footer">
+                                    <span class="d-block">Last updated 10 mins ago</span>
+                                </div>
+                            </div>
+                        </div><!-- red-bar-chart ends -->
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-5">
+                        <div class="red-line-chart rounded">
+                            <div class="ct-chart ct-golden-section" id="homeLineChart"></div>
+                            <div class="chart-info">
+                                <h5>Website views</h5>
+                                <span><i class="fas fa-long-arrow-alt-up"></i>Views increased up to 70%</span>
+                                <div class="chart-footer">
+                                    <span class="d-block">Last updated 3 mins ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- row ends -->
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-5">
+                        <div class="project-progress-wrapper rounded">
+                            <h5 class="text-capitalize d-inline">
+                                projects <span>progress</span>
+                            </h5>
+                            <button type="button" class="text-capitalize this-week-btn float-right btn btn-primary">this week</button>
+
+                            <!-- ---- bootstrap table ----- -->
+
+                            <table class="table table-responsive-sm" id="projects-pro-table">
+                                <thead>
+                                    <tr class="text-capitalize with-border">
+                                        <th scope="col">projects</th>
+                                        <th scope="col">priority</th>
+                                        <th scope="col">status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-capitalize">
+                                        <th class="pro-name" scope="row">Admin Dashboard Homepage</th>
+                                        <td class="priority-item">high</td>
+                                        <td><a href="#" class="status-item status-green">completed</a></td>
+                                        <td>
+                                            <div class="btn-group dropleft status-dropdown">
+                                                <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span></span><span></span><span></span>
+                                                </a>
+                                                <div class="dropdown-menu status-dropdown-menu text-capitalize">
+                                                    <a class="dropdown-item" href="#">completed</a>
+                                                    <a class="dropdown-item" href="#">on hold</a>
+                                                    <a class="dropdown-item" href="#">delayed</a>
+                                                    <a class="dropdown-item" href="#">canceled</a>
+                                                    <a class="dropdown-item" href="#">ongoing</a>
+                                                </div>
+                                            </div><!-- status-dropdown ends -->
+                                        </td>
+                                    </tr>
+                                    <tr class="text-capitalize">
+                                        <th class="pro-name" scope="row">chart.Js Implementation</th>
+                                        <td class="priority-item">Low</td>
+                                        <td><a href="#" class="status-item status-orange">on hold</a></td>
+                                        <td>
+                                            <div class="btn-group dropleft status-dropdown">
+                                                <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span></span><span></span><span></span>
+                                                </a>
+                                                <div class="dropdown-menu status-dropdown-menu text-capitalize">
+                                                    <a class="dropdown-item" href="#">completed</a>
+                                                    <a class="dropdown-item" href="#">on hold</a>
+                                                    <a class="dropdown-item" href="#">delayed</a>
+                                                    <a class="dropdown-item" href="#">canceled</a>
+                                                    <a class="dropdown-item" href="#">ongoing</a>
+                                                </div>
+                                            </div><!-- status-dropdown ends -->
+                                        </td>
+                                    </tr>
+                                    <tr class="text-capitalize">
+                                        <th class="pro-name" scope="row">Email Template	</th>
+                                        <td class="priority-item">high</td>
+                                        <td><a href="#" class="status-item status-red">delayed</a></td>
+                                        <td>
+                                            <div class="btn-group dropleft status-dropdown">
+                                                <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span></span><span></span><span></span>
+                                                </a>
+                                                <div class="dropdown-menu status-dropdown-menu text-capitalize">
+                                                    <a class="dropdown-item" href="#">completed</a>
+                                                    <a class="dropdown-item" href="#">on hold</a>
+                                                    <a class="dropdown-item" href="#">delayed</a>
+                                                    <a class="dropdown-item" href="#">canceled</a>
+                                                    <a class="dropdown-item" href="#">ongoing</a>
+                                                </div>
+                                            </div><!-- status-dropdown ends -->
+                                        </td>
+                                    </tr>
+                                    <tr class="text-capitalize">
+                                        <th class="pro-name" scope="row">Simplify Pricing Tables</th>
+                                        <td class="priority-item">average</td>
+                                        <td><a href="#" class="status-item status-cyan">canceled</a></td>
+                                        <td>
+                                            <div class="btn-group dropleft status-dropdown">
+                                                <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span></span><span></span><span></span>
+                                                </a>
+                                                <div class="dropdown-menu status-dropdown-menu text-capitalize">
+                                                    <a class="dropdown-item" href="#">completed</a>
+                                                    <a class="dropdown-item" href="#">on hold</a>
+                                                    <a class="dropdown-item" href="#">delayed</a>
+                                                    <a class="dropdown-item" href="#">canceled</a>
+                                                    <a class="dropdown-item" href="#">ongoing</a>
+                                                </div>
+                                            </div><!-- status-dropdown ends -->
+                                        </td>
+                                    </tr>
+                                    <tr class="text-capitalize">
+                                        <th class="pro-name" scope="row">Sidebar Creation</th>
+                                        <td class="priority-item">low</td>
+                                        <td><a href="#" class="status-item status-purple">ongoing</a></td>
+                                        <td>
+                                            <div class="btn-group dropleft status-dropdown">
+                                                <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span></span><span></span><span></span>
+                                                </a>
+                                                <div class="dropdown-menu status-dropdown-menu text-capitalize">
+                                                    <a class="dropdown-item" href="#">completed</a>
+                                                    <a class="dropdown-item" href="#">on hold</a>
+                                                    <a class="dropdown-item" href="#">delayed</a>
+                                                    <a class="dropdown-item" href="#">canceled</a>
+                                                    <a class="dropdown-item" href="#">ongoing</a>
+                                                </div>
+                                            </div><!-- status-dropdown ends -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- project-progress-wrapper ends -->
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-5">
+                        <div class="to-do-box-wrapper rounded">
+                            <h5 class="text-capitalize d-inline">
+                                to do <span>list</span>
+                            </h5>
+                            <form class="input-group">
+                                <input type="text" placeholder="add task" id="textfield">
+                                <button type="button" id="addBtn" value="add" class="text-capitalize btn btn-primary">add</button>
+                            </form>
+                            <ul class="checklist" id="checklist">
+                                <li>
+                                    <input type="checkbox" id="check-item_one">
+                                    <label for="check-item_one">create sidebar</label>
+                                    <span class="show-on-hover float-right">
+                                        <span class="delete"><i class="fas fa-trash-alt"></i></span>
+                                    </span>
+                                </li>
+                                <li><input type="checkbox" id="check-item_two">
+                                    <label for="check-item_two">add color gradient for cards</label>
+                                    <span class="show-on-hover float-right">
+                                        <span class="delete"><i class="fas fa-trash-alt"></i></span>
+                                    </span>
+                                </li>
+                                <li><input type="checkbox" id="check-item_three">
+                                    <label for="check-item_three">change box shadows</label>
+                                    <span class="show-on-hover float-right">
+                                        <span class="delete"><i class="fas fa-trash-alt"></i></span>
+                                    </span>
+
+                                </li>
+                                <li><input type="checkbox" id="check-item_four">
+                                    <label for="check-item_four">add some colors for header</label>
+                                    <span class="show-on-hover float-right">
+                                        <span class="delete"><i class="fas fa-trash-alt"></i></span>
+                                    </span>
+                                </li>
+                                <li><input type="checkbox" id="check-item_five">
+                                    <label for="check-item_five">create charts</label>
+                                    <span class="show-on-hover float-right">
+                                        <span class="delete"><i class="fas fa-trash-alt"></i></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div><!-- to-do-box-wrapper ends-->
+                    </div><!-- col ends -->
+                </div><!-- row ends -->
+                <div class="row mb-5">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="top-locations-wrapper rounded">
+                            <h5 class="text-capitalize">top locations</h5>
+                            <canvas class="chartjs" id="chartjs-4" width="400" height="400"></canvas>
+                            <span class="text-uppercase">usa</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-cyan" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                            </div>
+                            <span class="text-capitalize">europe</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-green" role="progressbar" style="width: 30%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">30%</div>
+                            </div>
+                            <span class="text-capitalize">Asia</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-pink" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                            </div>
+                        </div>
+                    </div><!-- col ends -->
+                    <div class="col-lg-8 col-md-8">
+                        <div class="row mb-5">
+                            <div class="col-lg-7 col-md-5">
+                                <div class="testimonial-slider-wrapper rounded">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet t, consectetur adipiscing elit. Maecenas
+                                                    convallis odio eget felis tincidunt sodales id at odio. Pellentesque
+                                                    vehicula imperdiet purus, id consectetur ipsum facilisis. <i class="fas fa-quote-right"></i></p>
+                                                <span class="in-icon">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </span>
+                                                <div class="author-box">
+                                                    <div class="author-pic-box">
+                                                        <div class="author-img rounded-circle"></div>
+                                                    </div>
+                                                    <div class="author-info-box">
+                                                        <span class="text-capitalize">john snow</span>
+                                                        <span class="text-capitalize">founder, CEO</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet t, consectetur adipiscing elit. Maecenas
+                                                    convallis odio eget felis tincidunt sodales id at odio. Pellentesque
+                                                    vehicula imperdiet purus, id consectetur ipsum facilisis. <i class="fas fa-quote-right"></i></p>
+                                                <span class="in-icon">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </span>
+                                                <div class="author-box">
+                                                    <div class="author-pic-box">
+                                                        <div class="author-img rounded-circle"></div>
+                                                    </div>
+                                                    <div class="author-info-box">
+                                                        <span class="text-capitalize">john snow</span>
+                                                        <span class="text-capitalize">founder, CEO</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet t, consectetur adipiscing elit. Maecenas
+                                                    convallis odio eget felis tincidunt sodales id at odio. Pellentesque
+                                                    vehicula imperdiet purus, id consectetur ipsum facilisis. <i class="fas fa-quote-right"></i></p>
+                                                <span class="in-icon">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </span>
+                                                <div class="author-box">
+                                                    <div class="author-pic-box">
+                                                        <div class="author-img rounded-circle"></div>
+                                                    </div>
+                                                    <div class="author-info-box">
+                                                        <span class="text-capitalize">john snow</span>
+                                                        <span class="text-capitalize">founder, CEO</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- testimonial-slider-wrapper ends -->
+                            </div><!-- col ends -->
+                            <div class="col-lg-5 col-md-3">
+                                <div class="social-activity-wrapper rounded d-flex">
+                                    <div class="social-activity-chart">
+                                        <canvas id="pieChart" width="250" height="250"></canvas>
+                                    </div>
+                                    <div class="social-activity-info">
+                                        <h5 class="text-capitalize">social activity</h5>
+                                        <ul>
+                                            <li>
+                                                <i class="fab fa-dribbble-square"></i>
+                                                7689
+                                            </li>
+                                            <li>
+                                                <i class="fab fa-behance-square"></i>
+                                                573
+                                            </li>
+                                            <li>
+                                                <i class="fab fa-pinterest-square"></i>
+                                                498
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div><!-- social-activity-wrapper ends -->
+                            </div>
+                        </div>
+                        <div class="blog-posts-wrapper rounded">
+                            <h5 class="text-capitalize">latest blog posts</h5>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img class="card-img-top" src="img/blog-post1.jpeg" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title text-capitalize">lorem ipsum</h6>
+                                            <p>Joe Lanister | 5 hours ago</p>
+                                            <a href="#" class="card-link">Lorem ipsum dolor sit amett,<br>
+                                                consectetur adipiscing elit.<br>
+                                                Maecenas convallis odio ....</a>
+                                        </div>
+                                    </div><!-- card ends -->
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img class="card-img-top" src="img/blog-post2.jpeg" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title text-capitalize">lorem ipsum</h6>
+                                            <p>Joe Lanister | 5 hours ago</p>
+                                            <a href="#" class="card-link">Lorem ipsum dolor sit amett,<br>
+                                                consectetur adipiscing elit.<br>
+                                                Maecenas convallis odio ....</a>
+                                        </div>
+                                    </div><!-- card ends -->
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img class="card-img-top" src="img/blog-post3.jpeg" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title text-capitalize">lorem ipsum</h6>
+                                            <p>Joe Lanister | 5 hours ago</p>
+                                            <a href="#" class="card-link">Lorem ipsum dolor sit amett,<br>
+                                                consectetur adipiscing elit.<br>
+                                                Maecenas convallis odio ....</a>
+                                        </div>
+                                    </div><!-- card ends -->
+                                </div>
+                            </div>
+
+                        </div><!-- blog-posts-wrapper ends -->
+                    </div>
+                </div><!-- row ends-->
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb-5">
+                        <div class="direct-email-wrapper rounded-5">
+                            <h5 class="text-capitalize">direct email</h5>
+                            <form action="" class="email-form">
+                                <div class="input-group-to">
+                                    <input type="text" placeholder="to" class="text-capitalize">
+                                    <label class="text-capitalize">
+                                        <i class="fas fa-user"></i>
+                                    </label>
+                                </div><!-- input-group-to ends -->
+                                <div class="input-group-subject">
+                                    <input type="text" placeholder="subject" class="text-capitalize">
+                                    <label>
+                                        <i class="fas fa-file-alt"></i>
+                                    </label>
+                                </div><!-- input-group-subject ends -->
+                                <div class="message-box">
+                                    <textarea class="text-capitalize" name="text" placeholder="message"></textarea>
+                                </div>
+                                <button class="text-capitalize">send</button>
+                            </form>
+                        </div><!-- direct-email-wrapper ends -->
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb-5">
+                        <div class="user-profile-wrapper rounded">
+                            <div class="card">
+                                <div class="profile-top-img-box">
+                                </div>
+                                <div class="flexbox d-flex">
+                                    <ul class="side-social-menu">
+                                        <li><a href="https://www.behance.net/" target="_blank"><i class="fab fa-behance-square"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+                                        <li><a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble-square"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
+                                    <div class="card-body text-center">
+                                        <div class="user-profile-pic m-auto">
+                                            <img class=" rounded-circle" src="img/user-profile-pic.png" alt="">
+                                        </div>
+                                        <h6 class="card-title text-capitalize">maya natali</h6>
+                                        <span class="text-capitalize">front end designer</span>
+                                        <p class="card-text">Lorem ipsum dolor sit amet t, consectetur adipiscing elit. Maecenas<br>
+                                            convallis odio eget felis tincidunt sodales id at odio. Pellentesque<br>
+                                            vehicula imperdiet purus, id consectetur ipsum facilisis ac.</p>
+                                        <a href="#" class="text-capitalize">view profile</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div><!-- user-profile-wrapper ends -->
+                    </div>
+
+                </div><!-- row ends -->
+            </div><!-- main-content ends -->
+        </div><!-- container-fluid ends-->
+        <footer>
+            <p>Made with <i class="fas fa-heart"></i> by Espace 2018</p>
+        </footer>
+    </div><!-- content-wrapper ends-->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/chartist.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
